@@ -1,0 +1,6 @@
+USE [master]
+GO
+CREATE LOGIN [DESKTOP-GC01\usuario_demo] 
+FROM WINDOWS 
+WITH DEFAULT_DATABASE=[master]
+GO
