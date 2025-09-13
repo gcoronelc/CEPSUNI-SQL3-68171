@@ -1,0 +1,25 @@
+USE [master]
+GO
+
+BACKUP DATABASE Northwind 
+TO DISK = 'D:\BACKUP\Varias_13SET2025.bak'
+WITH INIT;
+GO
+
+restore headeronly 
+from disk = 'D:\BACKUP\Varias_13SET2025.bak';
+GO
+
+
+BACKUP DATABASE EurekaBank 
+TO DISK = 'D:\BACKUP\Varias_13SET2025.bak'
+WITH NOINIT;
+GO
+
+BACKUP DATABASE EduTec 
+TO DISK = 'D:\BACKUP\Varias_13SET2025.bak'
+WITH NOINIT;
+GO
+
+
+
